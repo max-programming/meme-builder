@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Builder</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://github.com/niklasvh/html2canvas/releases/download/v1.4.1/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Meme Builder</h1>
+    </nav>
+    <main>
+      <div class="file-selector">
+        <input type="file" id="picker" />
+      </div>
+      <div class="img">
+        <p id="topText"></p>
+        <img id="image" width="350" />
+        <p id="bottomText"></p>
+      </div>
+      <div class="controls">
+        <div class="content">
+          <input type="text" placeholder="Top Text" id="topT" />
+          <input type="text" placeholder="Bottom Text" id="bottomT" />
+        </div>
+        <button class="downloadBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+            />
+          </svg>
+
+          Download
+        </button>
+        <!-- <div class="customization">
+          <input type="number" placeholder="Text Size" id="textSize" />
+          <input type="color" placeholder="Text Color" id="textColor" />
+        </div> -->
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

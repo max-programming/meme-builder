@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: cadetblue;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.file-selector {
+  border: 1px solid #e5e5e5;
+}
+
+input[type='file']::file-selector-button {
+  background-color: #fff;
+  color: #000;
+  border: 0px;
+  border-right: 1px solid #e5e5e5;
+  padding: 10px 15px;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+
+input[type='file']::file-selector-button:hover {
+  background-color: #eee;
+  border: 0px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.controls input {
+  padding: 10px 15px;
+  transition: 0.5s;
+  border: 1px solid #e5e5e5;
+  outline: none;
+}
+
+input[type='color'] {
+  padding: 0;
+}
+
+.img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.img p {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#topText {
+  top: 5px;
+}
+
+#bottomText {
+  bottom: 5px;
+}
+
+.downloadBtn {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: cadetblue;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.downloadBtn:hover {
+  background-color: rgb(29, 129, 133);
+}
+
+.downloadBtn svg {
+  width: 20px;
+  height: 20px;
+}
