@@ -19,8 +19,3 @@ To use the app, follow these simple steps:
 4. Preview your meme and make any necessary adjustments.
 5. Download the resulting meme to your device.
 6. Share the meme on social media if desired.
-
-## Support
-
-If you encounter any issues with the app, please contact our support team at support@memebuilderapp.com.
-
