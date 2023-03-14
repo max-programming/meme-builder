@@ -21,6 +21,12 @@ main {
   gap: 10px;
 }
 
+.pickers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .file-selector {
   border: 1px solid #e5e5e5;
 }
@@ -81,7 +87,7 @@ input[type='color'] {
   bottom: 5px;
 }
 
-.downloadBtn {
+.btn {
   display: flex;
   justify-content: center;
   gap: 5px;
@@ -95,7 +101,7 @@ input[type='color'] {
   cursor: pointer;
 }
 
-.downloadBtn:hover {
+.btn:hover {
   background-color: rgb(29, 129, 133);
 }
 

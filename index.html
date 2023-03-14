@@ -13,8 +13,11 @@
       <h1>Meme Builder</h1>
     </nav>
     <main>
-      <div class="file-selector">
-        <input type="file" id="picker" />
+      <div class="pickers">
+        <div class="file-selector">
+          <input type="file" id="picker" />
+        </div>
+        <button class="btn" id="random">Random</button>
       </div>
       <div class="img">
         <p id="topText"></p>
@@ -26,7 +29,7 @@
           <input type="text" placeholder="Top Text" id="topT" />
           <input type="text" placeholder="Bottom Text" id="bottomT" />
         </div>
-        <button class="downloadBtn">
+        <button class="btn downloadBtn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -7,12 +7,20 @@ const textColor = document.getElementById('textColor');
 const picker = document.getElementById('picker');
 const image = document.getElementById('image');
 const downloadBtn = document.querySelector('.downloadBtn');
+const randomBtn = document.getElementById('random');
+
+randomBtn.onclick = () => {
+  fetch('https://source.unsplash.com/random/350×200/?memes,funny')
+    .then(r => r.blob())
+    .then(d => {
+      image.src = URL.createObjectURL(d);
+    });
+};
 
 picker.onchange = e => {
   /** @type {File} */
   const file = picker.files[0];
   image.src = URL.createObjectURL(file);
-  // console.log(URL.createObjectURL(file));
 };
 
 topT.oninput = e => {
