@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type='submit'] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type='submit']:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Contact - Meme Builder</h1>
+    </nav>
+    <main style="width: 80%; margin: 2.5rem auto">
+      <h1>Contact Us</h1>
+      <p>Have a question or suggestion? We'd love to hear from you!</p>
+      <form>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Enter your message"
+        ></textarea>
+        <input type="submit" value="Send" />
+      </form>
+      <hr />
+      <p>You can also reach us at:</p>
+      <p>
+        Email:
+        <a href="mailto:contact@meme-generator.com"
+          >contact@meme-generator.com</a
+        >
+      </p>
+    </main>
+  </body>
+</html>
